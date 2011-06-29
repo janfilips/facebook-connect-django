@@ -6,8 +6,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import redirect, render
 
 # These probably want to go in settings.py at some point
-APP_ID = "236678729685171"
-APP_SECRET = "d9764705681ab921070ec91b96cbe806"
+APP_ID = ""
+APP_SECRET = ""
 
 def connect(request):
 	redirect_uri = "http://localhost:8000/"

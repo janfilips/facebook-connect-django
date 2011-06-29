@@ -1,0 +1,15 @@
+{% extends "facebook_connect/base.html" %}
+
+{% block content %}
+{% if error %}
+<h1>Error</h1>
+<p>
+{% if request.GET.error_reason == "user_denied" %}
+Facebook connection disapproved.
+{% else %}
+Unknown error.
+{% endif %}
+</p>
+{% endif %}
+<a href="{{ url }}">Connect with Facebook</a>
+{% endblock %}
